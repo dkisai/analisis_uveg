@@ -1,0 +1,15 @@
+import streamlit as st
+
+st.markdown("# Falacias: Prueba Incompleta")
+st.sidebar.markdown("### Falacias: Prueba Incompleta")
+st.markdown("""
+        Una falacia de prueba incompleta ocurre cuando la evidencia presentada en un análisis es insuficiente o parcial, lo que lleva a conclusiones que pueden ser erróneas o engañosas. En el contexto de nuestro análisis de los rendimientos diarios del fondo de inversión, una potencial falacia de prueba incompleta podría surgir de varios aspectos:
+        #### Análisis Temporal Limitado
+        El análisis se centra únicamente en los rendimientos diarios durante un mes específico. Aunque este enfoque proporciona información valiosa sobre el comportamiento del fondo en ese período, podría no ser representativo de su desempeño en diferentes condiciones de mercado o en otros períodos de tiempo. Concluir sobre la estabilidad o volatilidad del fondo basándose únicamente en este corto lapso puede ser engañoso, ya que no considera variaciones estacionales, ciclos económicos o eventos atípicos que podrían influir significativamente en los rendimientos.
+        #### Dependencia de Modelos Estadísticos Específicos
+        El uso de regresión lineal y medias móviles para determinar tendencias en los datos implica suposiciones que pueden no ser válidas en todos los contextos. Por ejemplo, la regresión lineal asume una relación lineal entre las variables, lo que puede no capturar adecuadamente la naturaleza de los rendimientos financieros que a menudo son no lineales y sujetos a shocks externos. Confiar en estas técnicas sin considerar sus limitaciones podría llevar a interpretaciones incorrectas de los datos.
+        #### Selección de Métricas
+        La elección de centrarse en medidas como la media, mediana, moda, desviación estándar y el IQR para describir los rendimientos puede omitir aspectos críticos del análisis financiero, como la curtosis y la asimetría, que son importantes para entender la probabilidad de eventos extremos en distribuciones financieras. La omisión de estas métricas puede resultar en una comprensión incompleta del riesgo y la naturaleza de los rendimientos del fondo.
+        #### Recomendación para Mitigar la Falacia
+        Para evitar caer en la falacia de prueba incompleta, se recomienda extender el análisis a múltiples períodos y condiciones de mercado para obtener una visión más holística y representativa del comportamiento del fondo. Además, debería explorarse el uso de modelos estadísticos más robustos y diversificados que puedan capturar mejor la complejidad de los mercados financieros. Finalmente, ampliar el conjunto de métricas analizadas para incluir aquellas que proporcionen una mejor comprensión de los riesgos de cola y la distribución de los rendimientos puede proporcionar una imagen más precisa y completa.
+        """)
